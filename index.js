@@ -81,7 +81,7 @@ function setTime() {
 	timediv.innerText = timestr;
 	document.title = `${timestr} ${fullname[roundInfo.current]} - Tomodoro`;
 document.getElementById("ring-image").style.transform = 
-    `rotate(${(roundInfo.t / config[roundInfo.current]) * 360}deg)`;
+    `rotate(${(roundInfo.t / 30) * 360}deg)`;
 	if (pipActive) loop();
 }
 
