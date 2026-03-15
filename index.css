@@ -136,40 +136,17 @@ body {
 	flex-wrap: nowrap;
 	align-items: center;
 	justify-content: center;
-	overflow: hidden;
+	overflow: visible;
 }
 
-#ring {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 70vmin;
-	height: 70vmin;
-	transform: rotate(-90deg);
-}
-
-#secondary {
-	stroke: var(--coloraccent);
-	stroke-width: 1px;
-}
-
-#progress {
-	stroke-width: 4px;
-	stroke-dasharray: 100.15;
-	stroke-dashoffset: 0;
-	transition: stroke-dashoffset 1000ms linear;
-}
-
-.t-focus #progress {
-	stroke: var(--focus);
-}
-
-.t-short #progress {
-	stroke: var(--short);
-}
-
-.t-long #progress {
-	stroke: var(--long);
+#ring-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70vmin;
+    height: 70vmin;
+    transform-origin: center center;
+    transition: transform 1000ms linear;
 }
 
 #time {
