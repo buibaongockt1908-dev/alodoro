@@ -136,7 +136,7 @@ body {
 	flex-wrap: nowrap;
 	align-items: center;
 	justify-content: center;
-	overflow: visible;
+	overflow: hidden;
 }
 
 #status {
@@ -148,7 +148,7 @@ body {
 	text-align: center;
 	user-select: none;
 	position: relative;
-	z-index: 1;
+	z-index: -1;
 }
 #time {
     font-size: 15vmin;
@@ -194,7 +194,6 @@ body {
 	grid-template-areas: "area";
 	text-align: center;
 	cursor: pointer;
-	z-index: 1;
 }
 
 #playing,
