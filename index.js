@@ -80,7 +80,8 @@ function setTime() {
 		(seconds % 60).toString().padStart(2, "0");
 	timediv.innerText = timestr;
 	document.title = `${timestr} ${fullname[roundInfo.current]} - Tomodoro`;
-	progress.style.strokeDashoffset = (roundInfo.t / config[roundInfo.current]) * 100;
+document.getElementById("ring-image").style.transform = 
+    `rotate(${(roundInfo.t / config[roundInfo.current]) * 360}deg)`;
 	if (pipActive) loop();
 }
 
