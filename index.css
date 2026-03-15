@@ -147,11 +147,13 @@ body {
     height: 70vmin;
     transform-origin: center center;
     transition: transform 1000ms linear;
-    z-index: -1;
+    z-index: 0;
 }
 #time {
-	font-size: 15vmin;
-	padding-top: 3vmin;
+    font-size: 15vmin;
+    padding-top: 3vmin;
+    z-index: 1;
+    position: relative;
 }
 
 #status {
