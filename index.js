@@ -1562,7 +1562,14 @@ pipDoubleClickRestoreSelect.addEventListener("change", function () {
 function loop() {
 	ctx.fillStyle = accents[theme][themeAccent]["--bgcolor"];
 	ctx.fillRect(0, 0, 400, 400);
-
+	ctx.save();
+	ctx.translate(200, 200);
+	ctx.rotate((roundInfo.t / 30) * Math.PI * 2);
+	ctx.beginPath();
+	ctx.arc(0, 0, 180, 0, Math.PI * 2);
+	ctx.clip();
+	ctx.drawImage(document.getElementById("ring-image"), -180, -180, 360, 360);
+	ctx.restore();
 	ctx.fillStyle = accents[theme][themeAccent]["--color"];
 	ctx.font = "80px monospace";
 	ctx.textAlign = "center";
