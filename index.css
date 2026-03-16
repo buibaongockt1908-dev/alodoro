@@ -137,6 +137,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	overflow: visible;
+	z-index: -1;
 }
 
 #status {
@@ -153,7 +154,7 @@ body {
 #time {
     font-size: 15vmin;
     padding-top: 3vmin;
-    z-index: 1;
+    z-index: 3;
     position: relative;
 }
 
