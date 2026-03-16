@@ -1230,5 +1230,5 @@ video.pipactive {
     color: #ffffff;
 	position: relative;
 	opacity: 1;
-    z-index: 2; /* chữ nằm trên */;
+    z-index: 3; /* chữ nằm trên */;
 }
