@@ -1216,3 +1216,17 @@ video.pipactive {
 #pie svg path:hover {
 	opacity: 1;
 }
+#ring-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0.15;
+    pointer-events: none;
+}
+
+#time {
+    color: #ffffff;
+	position: relative;
+    z-index: 1; /* chữ nằm trên */;
+}
